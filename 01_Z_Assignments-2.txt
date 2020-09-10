@@ -47,11 +47,11 @@ usermod -aG sudo ansible
 ans:-
 
 ansible@ip-172-31-8-76:~$ ansible all -i /home/ansible/inventory -m ping
-[DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host 172.31.5.89 should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior
+[DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host 172.31.8.76 should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior
 Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See
 https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation
 warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
-172.31.18.6 | SUCCESS => {
+172.31.5.89 | SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python"
     },
@@ -60,13 +60,13 @@ warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
 }
 
  ansible all -i /home/ansible/inventory -m ping  >/home/ansible/output.cfg
-[DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host 172.31.5.89 should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior
+[DEPRECATION WARNING]: Distribution Ubuntu 18.04 on host 172-.1.8.76 should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior
 Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See
 https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation
 warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
 
-ansible@ip-172-31-26-27:~$ cat output.cfg q
-172.31.18.6 | SUCCESS => {
+ansible@ip-172-31-8-76:~$ cat output.cfg q
+172.31.5.89| SUCCESS => {
     "ansible_facts": {
         "discovered_interpreter_python": "/usr/bin/python"
     },
